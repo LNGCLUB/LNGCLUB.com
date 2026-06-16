@@ -1,51 +1,90 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   max-width: 900px;
-  margin: 40px auto;
+  margin: 50px auto;
   padding: 0 20px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #1a1a1a;
+  background-color: #ffffff;
 }
 
 header {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 header h1 {
   margin: 0;
-  color: #0b2a4a; /* navy */
+  font-size: 32px;
+  color: #0b2a4a;
+  letter-spacing: -0.5px;
 }
 
 header p {
-  margin: 5px 0 15px 0;
-  color: #555;
+  margin: 6px 0 15px;
+  color: #666;
+  font-size: 15px;
+}
+
+/* NAVIGATION */
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   text-decoration: none;
   color: #0b2a4a;
-  font-weight: 500;
-  margin-right: 10px;
+  font-size: 14px;
+  margin-right: 12px;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
+/* CONTENT */
+main {
+  margin-top: 30px;
+}
+
 main h2 {
+  font-size: 26px;
+  color: #0b2a4a;
+  margin-bottom: 15px;
+}
+
+main h3 {
   margin-top: 30px;
   color: #0b2a4a;
 }
 
 ul {
   margin-top: 10px;
+  padding-left: 20px;
 }
 
+li {
+  margin-bottom: 8px;
+}
+
+/* SEPARATION LINE */
+hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* FOOTER */
 footer {
   margin-top: 50px;
   padding-top: 20px;
-  border-top: 1px solid #ddd;
-  font-size: 0.9em;
+  border-top: 1px solid #e5e5e5;
+  font-size: 14px;
   color: #444;
+}
+
+footer strong {
+  display: block;
+  margin-bottom: 8px;
 }
