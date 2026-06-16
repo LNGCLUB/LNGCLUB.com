@@ -1,9 +1,51 @@
-<nav>
-  <a href="/">Home</a> |
-  <a href="/commercial-advisory/">Commercial Advisory</a> |
-  <a href="/why-it-matters/">Why It Matters</a> |
-  <a href="/experience/">Experience</a> |
-  <a href="/expert-disputes/">Expert & Disputes</a> |
-  <a href="/contact/">Contact</a>
-</nav>
-``
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  color: #0b2a4a; /* navy */
+}
+
+header p {
+  margin: 5px 0 15px 0;
+  color: #555;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0b2a4a;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main h2 {
+  margin-top: 30px;
+  color: #0b2a4a;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #444;
+}
