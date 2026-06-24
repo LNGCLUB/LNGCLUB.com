@@ -237,7 +237,6 @@ footer a {
 .logo {
   margin-left: auto;   /* THIS is the key fix */
 }
-``
 
 /* LOGO SIZE (LOCKED — will not break again) */
 .logo img {
@@ -249,10 +248,9 @@ footer a {
 
   display: block;
 }
-``
+
 .logo {
   margin-left: auto;
   overflow: hidden;   /* ✅ prevents bleed */
 }
-``
 
