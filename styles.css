@@ -225,6 +225,7 @@ footer a {
 }
 
 .logo img {
-  height: 60px;
+  max-height: 60px;   /* limits size */
   width: auto;
+  display: block;
 }
