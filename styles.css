@@ -21,9 +21,9 @@ body {
 }
 
 .site-wrap {
-  max-width: 980px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 38px 28px 56px;
+  padding: 38px 20px 56px;
 }
 
 header {
