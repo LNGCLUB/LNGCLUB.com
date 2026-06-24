@@ -251,3 +251,6 @@ footer a {
   display: block !important;
   object-fit: contain !important;
 }
+.nav {
+  justify-content: flex-start;
+}
