@@ -276,3 +276,14 @@ footer a {
   letter-spacing: 1px;
   font-weight: 700;
 }
+/* === MOVE LOGO RIGHT + NAV LEFT === */
+
+.logo {
+  order: 2;   /* pushes logo to the right */
+}
+
+.nav {
+  order: 1;
+  display: flex;
+  gap: 24px;
+}
