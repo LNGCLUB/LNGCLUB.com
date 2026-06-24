@@ -229,3 +229,8 @@ footer a {
   width: auto;
   display: block;
 }
+.site-header {
+  position: relative;   /* prevents overlap */
+  z-index: 10;
+  padding: 20px 40px;
+}
