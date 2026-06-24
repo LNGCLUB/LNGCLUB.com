@@ -212,3 +212,19 @@ footer a {
   }
 }
 ``
+/* === LOGO HEADER === */
+
+.site-header {
+  padding: 20px 40px;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: flex-start; /* left aligned */
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
