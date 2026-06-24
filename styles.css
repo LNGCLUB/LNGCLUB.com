@@ -235,9 +235,9 @@ footer a {
 
 /* LOGO RIGHT */
 .logo {
-  flex-shrink: 0;
-  margin-left: 20px;
+  margin-left: auto;   /* THIS is the key fix */
 }
+``
 
 /* LOGO SIZE (LOCKED — will not break again) */
 .logo img {
