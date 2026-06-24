@@ -254,3 +254,13 @@ footer a {
   margin: 60px auto;   /* more breathing space */
   padding: 0 30px;
 }
+/* === HOMEPAGE TEXT CLEANUP === */
+
+.main-content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.main-content h2 {
+  margin-top: 40px;
+}
