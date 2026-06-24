@@ -264,3 +264,7 @@ footer a {
 .main-content h2 {
   margin-top: 40px;
 }
+.cs {
+  letter-spacing: 1px;
+  font-weight: 700;
+}
