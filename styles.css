@@ -216,7 +216,7 @@ footer a {
 
 .site-header {
   border-bottom: 1px solid #ddd;
-  padding: 10px 0;   /* remove side padding here */
+  padding: 15px 0;
 }
 
 .header-inner {
@@ -232,8 +232,10 @@ footer a {
 
 
 /* LOGO */
+
 .logo img {
-  height: 60px;   /* adjust 50–70px range */
+  height: 80px;   /* was too small before */
+  width: auto;
 }
 
 /* NAVIGATION */
