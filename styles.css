@@ -210,84 +210,42 @@ footer a {
   nav {
     gap: 8px 14px;
   }
-}
-``
-/* === HEADER CLEAN LAYOUT === */
+/* === CLEAN HEADER (FINAL) === */
 
 .site-header {
   border-bottom: 1px solid #ddd;
-  padding: 15px 0;
+  padding: 12px 0;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
-
-/* LOGO */
-
-
-
-/* NAVIGATION */
+/* NAV LEFT */
 .nav {
   display: flex;
   gap: 24px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #0b2e4f;
   font-size: 14px;
 }
 
-.nav a:hover {
-  opacity: 0.7;
-}
-``
-  z-index: 10;
-  padding: 20px 40px;
-}
-.main-content {
-  max-width: 680px;        /* narrower for slide look */
-  margin: 100px auto 80px; /* more top spacing */
-  padding: 0 20px;
-}
-/* === HOMEPAGE TEXT CLEANUP === */
-
-.main-content h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-.main-content h2 {
-  margin-top: 40px;
-}
-.cs {
-  letter-spacing: 1px;
-  font-weight: 700;
-}
-/* === MOVE LOGO RIGHT + NAV LEFT === */
-
+/* LOGO RIGHT */
 .logo {
-  order: 2;   /* pushes logo to the right */
+  flex-shrink: 0;
+  margin-left: 20px;
 }
 
-.nav {
-  order: 1;
-  display: flex;
-  gap: 24px;
-}
+/* LOGO SIZE (LOCKED — will not break again) */
 .logo img {
-  height: 70px;
-  max-height: 70px;   /* prevents expansion */
+  height: 65px;
   width: auto;
+  max-width: 180px;
   display: block;
 }
 ``
+
