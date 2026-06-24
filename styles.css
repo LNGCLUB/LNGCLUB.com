@@ -250,9 +250,9 @@ footer a {
   padding: 20px 40px;
 }
 .main-content {
-  max-width: 900px;
-  margin: 60px auto;   /* more breathing space */
-  padding: 0 30px;
+  max-width: 680px;        /* narrower for slide look */
+  margin: 100px auto 80px; /* more top spacing */
+  padding: 0 20px;
 }
 /* === HOMEPAGE TEXT CLEANUP === */
 
