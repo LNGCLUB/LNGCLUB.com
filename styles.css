@@ -233,10 +233,7 @@ footer a {
 
 /* LOGO */
 
-.logo img {
-  height: 80px;   /* was too small before */
-  width: auto;
-}
+
 
 /* NAVIGATION */
 .nav {
@@ -287,3 +284,10 @@ footer a {
   display: flex;
   gap: 24px;
 }
+.logo img {
+  height: 70px;
+  max-height: 70px;   /* prevents expansion */
+  width: auto;
+  display: block;
+}
+``
