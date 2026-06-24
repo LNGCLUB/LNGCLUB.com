@@ -251,6 +251,6 @@ footer a {
 }
 .main-content {
   max-width: 900px;
-  margin: 40px auto;   /* center */
-  padding: 0 20px;
+  margin: 60px auto;   /* more breathing space */
+  padding: 0 30px;
 }
