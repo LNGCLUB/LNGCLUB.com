@@ -231,6 +231,7 @@ footer a {
   flex-wrap: wrap;
   gap: 24px;
   font-size: 14px;
+  justify-content: flex-start;   
   align-items: center;
 }
 
@@ -245,12 +246,10 @@ footer a {
 }
 
 .site-header .logo img {
-  height: 85px !important;
+  height: 100px !important;
   width: auto !important;
-  max-width: 220px !important;
+  max-width: 280px !important;
   display: block !important;
   object-fit: contain !important;
 }
-.nav {
-  justify-content: flex-start;
-}
+
