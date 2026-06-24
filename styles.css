@@ -249,3 +249,8 @@ footer a {
   z-index: 10;
   padding: 20px 40px;
 }
+.main-content {
+  max-width: 900px;
+  margin: 40px auto;   /* center */
+  padding: 0 20px;
+}
