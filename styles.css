@@ -209,48 +209,45 @@ footer a {
   }
   }
 
-/* === CLEAN HEADER (FINAL) === */
+/* === CLEAN HEADER FINAL === */
 
 .site-header {
   border-bottom: 1px solid #ddd;
   padding: 12px 0;
+  margin-bottom: 0;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* NAV LEFT */
 .nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   font-size: 14px;
+  align-items: center;
 }
 
-/* LOGO RIGHT */
 .logo {
-  margin-left: auto;   /* THIS is the key fix */
+  margin-left: 28px;
+  flex: 0 0 auto;
 }
 
-/* LOGO SIZE (LOCKED — will not break again) */
-.logo img {
-  height: 65px;
-  width: auto;
-
-  max-width: 120px;   /* ✅ HARD CAP */
-  overflow: hidden;
-
+.logo a {
   display: block;
+  line-height: 0;
 }
 
-.logo {
-  margin-left: auto;
-  overflow: hidden;   /* ✅ prevents bleed */
+.site-header .logo img {
+  height: 65px !important;
+  width: auto !important;
+  max-width: 180px !important;
+  display: block !important;
+  object-fit: contain !important;
 }
-
