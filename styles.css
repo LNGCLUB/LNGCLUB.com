@@ -235,8 +235,8 @@ footer a {
 }
 
 .logo {
-  margin-left: 28px;
-  flex: 0 0 auto;
+  margin-left: auto;   /* push fully to right */
+  padding-left: 20px;  /* small breathing space */
 }
 
 .logo a {
