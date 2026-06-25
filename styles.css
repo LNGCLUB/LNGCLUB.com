@@ -221,9 +221,9 @@ footer a {
   display: flex;
   align-items: center;
 
-  max-width: 720px;     /* ✅ match content */
+  max-width: 1100px;     /* ✅ wider than content */
   margin: 0 auto;       /* ✅ center with content */
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .nav {
