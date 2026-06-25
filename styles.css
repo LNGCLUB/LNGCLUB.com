@@ -221,11 +221,8 @@ footer a {
   display: flex;
   align-items: center;
 
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  justify-content: flex-start;   /* ✅ ADD THIS */
+  width: 100%;         /* ✅ full width */
+  padding: 0 40px;     /* ✅ real page margin */
 }
 
 .nav {
