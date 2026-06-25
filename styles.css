@@ -232,7 +232,7 @@ footer a {
   display: flex;
   gap: 24px;
 
-  margin-right: auto;   /* ✅ anchors nav LEFT */
+  margin-right: 40px;   
 }
 
 .logo {
