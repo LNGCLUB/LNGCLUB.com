@@ -220,7 +220,7 @@ footer a {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
@@ -228,11 +228,9 @@ footer a {
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
-  font-size: 14px;
-  justify-content: flex-start;   
-  align-items: center;
+
+  margin-right: auto;   /* ✅ anchors nav LEFT */
 }
 
 .logo {
