@@ -4,400 +4,79 @@
   <meta charset="UTF-8">
   <title>CS LNG Club | Independent LNG Shipping & Infrastructure Advisory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-    :root {
-      --blue: #0f3548;
-      --red: #9b1f32;
-      --text: #18232d;
-      --muted: #5f6b75;
-      --border: #d7e0e4;
-      --soft: #f7fafb;
-      --white: #ffffff;
-      --shadow: 0 10px 24px rgba(15, 53, 72, 0.10);
-      --radius: 18px;
-      --max: 1080px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      min-height: 100%;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--white);
-      line-height: 1.55;
-    }
-
-    .site-header {
-      border-bottom: 1px solid var(--border);
-      background: #ffffff;
-    }
-
-    .header-inner {
-      width: min(var(--max), calc(100% - 48px));
-      margin: 0 auto;
-      padding: 22px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 32px;
-    }
-
-    .site-logo img {
-      display: block;
-      width: 118px;
-      max-width: 118px;
-      height: auto;
-    }
-
-    .site-nav {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      gap: 12px 22px;
-    }
-
-    .site-nav a {
-      color: var(--blue);
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 600;
-      line-height: 1.25;
-    }
-
-    .site-nav a:hover {
-      color: var(--red);
-    }
-
-    .page-shell {
-      width: min(var(--max), calc(100% - 48px));
-      margin: 0 auto;
-      padding: 54px 0 72px;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 160px;
-      gap: 40px;
-      align-items: start;
-      padding-bottom: 30px;
-      margin-bottom: 34px;
-      border-bottom: 5px solid var(--red);
-    }
-
-    .eyebrow {
-      margin: 0 0 12px;
-      color: var(--red);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin: 0;
-      max-width: 850px;
-      color: var(--blue);
-      font-size: clamp(36px, 5vw, 56px);
-      line-height: 1.05;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-    }
-
-    .hero-subtitle {
-      max-width: 760px;
-      margin: 20px 0 0;
-      color: var(--muted);
-      font-size: 20px;
-      line-height: 1.45;
-    }
-
-    .hero-logo {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-    }
-
-    .hero-logo img {
-      display: block;
-      width: 150px;
-      max-width: 150px;
-      height: auto;
-    }
-
-    .intro-card,
-    .content-card {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .intro-card {
-      padding: 30px 34px;
-      margin-bottom: 28px;
-    }
-
-    .intro-card h2,
-    .content-card h2 {
-      margin: 0 0 12px;
-      color: var(--blue);
-      font-size: 24px;
-      line-height: 1.2;
-      letter-spacing: -0.01em;
-    }
-
-    .intro-card p,
-    .content-card p {
-      margin: 0 0 14px;
-      font-size: 17px;
-    }
-
-    .intro-card p:last-child,
-    .content-card p:last-child {
-      margin-bottom: 0;
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
-      margin-top: 28px;
-    }
-
-    .content-card {
-      padding: 26px 28px;
-    }
-
-    .content-card a {
-      display: inline-block;
-      margin-top: 14px;
-      color: var(--red);
-      font-weight: 700;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(155, 31, 50, 0.35);
-    }
-
-    .content-card a:hover {
-      color: var(--blue);
-      border-bottom-color: var(--blue);
-    }
-
-    .site-footer {
-      margin-top: 36px;
-      padding: 22px 26px;
-      border-radius: var(--radius);
-      border: 1.5px solid var(--red);
-      background: #fffafa;
-      color: var(--blue);
-      display: grid;
-      gap: 8px;
-      text-align: center;
-    }
-
-    .site-footer strong {
-      font-size: 16px;
-    }
-
-    .site-footer a {
-      color: var(--blue);
-      font-weight: 700;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(15, 53, 72, 0.35);
-    }
-
-    .site-footer a:hover {
-      color: var(--red);
-      border-bottom-color: var(--red);
-    }
-
-    .site-footer small {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    @media (max-width: 820px) {
-      .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
-      }
-
-      .site-nav {
-        justify-content: flex-start;
-        gap: 10px 16px;
-      }
-
-      .hero {
-        grid-template-columns: 1fr;
-        gap: 22px;
-      }
-
-      .hero-logo {
-        justify-content: flex-start;
-      }
-
-      .hero-logo img {
-        width: 120px;
-        max-width: 120px;
-      }
-
-      .card-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 520px) {
-      .header-inner,
-      .page-shell {
-        width: min(100% - 28px, var(--max));
-      }
-
-      .page-shell {
-        padding-top: 36px;
-      }
-
-      .site-nav a {
-        font-size: 14px;
-      }
-
-      .intro-card,
-      .content-card {
-        padding: 22px;
-      }
-
-      h1 {
-        font-size: 34px;
-      }
-
-      .hero-subtitle {
-        font-size: 18px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
 
-  <header class="site-header">
-    <div class="header-inner">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-logo" href="/" aria-label="CS LNG Club home">
+      <img src="/">
+    </a>
 
-      <a class="site-logo" href="/" aria-label="CS LNG Club home">
-        <img src="/">
-      </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="active" href="/">Home</a>
+      <a href="/commercial-advisory/">Commercial Advisory</a>
+      <a href="/why-it-matters/">Why It Matters</a>
+      <a href="/experience/">Experience</a>
+      <a href="/expert-disputes/">Expert &amp; Disputes</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
 
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="/">Home</a>
-        <a href="/">Commercial Advisory</a>
-        <a href="/">Why It Matters</a>
-        <a href="/">Experience</a>
-        <a href="/">Expert &amp; Disputes</a>
-        <a href="/">Contact</a>
-      </nav>
+<main class="page-shell">
 
+  <section class="hero">
+    <div>
+      <p class="eyebrow">CS LNG Club</p>
+      <h1>Independent LNG Shipping &amp; Infrastructure Advisory</h1>
+      <p class="hero-subtitle">
+        Senior-led support for LNG shipping, floating infrastructure, commercial strategy and dispute-related decisions.
+      </p>
     </div>
-  </header>
 
-  <main class="page-shell">
+    <div class="hero-logo">
+      <img src="/">
+    </div>
+  </section>
 
-    <section class="hero">
-      <div>
-        <p class="eyebrow">CS LNG Club</p>
+  <section class="content-card">
+    <h2>Supporting Decisions That Must Work</h2>
+    <p>
+      CS LNG Club is an independent, senior-led advisory platform supporting LNG shipping,
+      floating infrastructure and dispute-related decisions.
+    </p>
+    <p>
+      Through its commercial advisory practice and expert &amp; disputes work, CS LNG Club supports
+      investors, legal teams and project stakeholders where outcomes depend on execution realism,
+      market practice and commercial judgement.
+    </p>
+  </section>
 
-        <h1>Independent LNG Shipping &amp; Infrastructure Advisory</h1>
+  <section class="content-card">
+    <h2>What CS LNG covers</h2>
+    <ul>
+      <li>Commercial LNG shipping and infrastructure advisory.</li>
+      <li>Why LNG and FSRUs matter for resilience and rapid deployment.</li>
+      <li>Execution-led experience across LNG shipping and floating infrastructure.</li>
+      <li>Independent expert and dispute support.</li>
+    </ul>
+  </section>
 
-        <p class="hero-subtitle">
-          Senior-led support for LNG shipping, floating infrastructure,
-          commercial strategy and dispute-related decisions.
-        </p>
-      </div>
+  <footer class="site-footer">
+    <strong>All enquiries are treated as strictly confidential.</strong>
+    <div>
+      WhatsApp: <a href="https://wa.me/447768502153">+44 7768 502153</a>
+      |
+      Email: <a href="mailto:kwb@lngclub.com">kwb@lngclub.com</a>
+    </div>
+    <small>Email preferred for dispute &amp; arbitration matters.</small>
+  </footer>
 
-      <div class="hero-logo">
-        <img src="/">
-      </div>
-    </section>
-
-    <section class="intro-card">
-      <h2>Supporting Decisions That Must Work</h2>
-
-      <p>
-        CS LNG Club is an independent, senior-led advisory platform supporting LNG
-        shipping, floating infrastructure and dispute-related decisions.
-      </p>
-
-      <p>
-        Through its commercial advisory practice and expert &amp; disputes work,
-        CS LNG Club supports investors, legal teams and project stakeholders where
-        outcomes depend on execution realism, market practice and commercial judgement.
-      </p>
-    </section>
-
-    <section class="card-grid">
-
-      <article class="content-card">
-        <h2>Commercial Advisory</h2>
-        <p>
-          Independent advice for LNG shipping, FSRU, floating infrastructure,
-          chartering and project delivery decisions.
-        </p>
-        <a href="/">View advisory support</a>
-      </article>
-
-      <article class="content-card">
-        <h2>Why It Matters</h2>
-        <p>
-          LNG and floating infrastructure support resilience, diversification and
-          rapid deployment where timing and security of supply are critical.
-        </p>
-        <a href="/">Read more</a>
-      </article>
-
-      <article class="content-card">
-        <h2>Experience</h2>
-        <p>
-          Execution-led experience across LNG carrier acquisition, chartering,
-          FSRU market development and shipping strategy.
-        </p>
-        <a href="/">View experience</a>
-      </article>
-
-      <article class="content-card">
-        <h2>Expert &amp; Disputes</h2>
-        <p>
-          Independent expert support for LNG shipping, floating infrastructure,
-          maritime matters, arbitration and dispute-related assessments.
-        </p>
-        <a href="/">View dispute support</a>
-      </article>
-
-    </section>
-
-    <footer class="site-footer">
-      <strong>All enquiries are treated as strictly confidential.</strong>
-
-      <div>
-        WhatsApp:
-        <a href="https://wa.me/447768502153">+44 7768 502153</a>
-        <span>|</span>
-        Email:
-        <a href="mailto:kwb@lngclub.com">kwb@lngclub.com</a>
-      </div>
-
-      <small>Email preferred for dispute &amp; arbitration matters.</small>
-    </footer>
-
-  </main>
+</main>
 
 </body>
 </html>
+`
