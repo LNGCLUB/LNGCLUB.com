@@ -45,8 +45,8 @@ body {
 
 .site-logo img {
   display: block;
-  width: 118px;
-  height: auto;
+  height: 50px;
+  width: auto;
 }
 
 .site-nav {
